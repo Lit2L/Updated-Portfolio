@@ -21,7 +21,7 @@ export function SideProjectsShell({ children }: { children: ReactNode }) {
           <AnimatedLetters
             key='title'
             as='h1'
-            text='Side Projects'
+            text='Case Studies(coming soon)'
             className='text-4xl font-medium lg:text-5xl'
             textVariants={{
               hidden: { transition: { staggerChildren: 0.015 } },

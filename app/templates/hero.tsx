@@ -1,6 +1,7 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
+import { HiDownload } from 'react-icons/hi'
 
 import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
 import { HeroIllustration } from '@/components/hero-illustration'

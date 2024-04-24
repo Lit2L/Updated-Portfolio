@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Logo from '@/components/logo'
 import { linkVariants, navVariants } from '@/components/navigation'
 import { ThemeToggleButton } from '@/components/theme-toggle-button'
+import { HiDownload } from 'react-icons/hi'
 
 const AnimatedLink = motion(Link)
 AnimatedLink.defaultProps = { className: 'hover:text-primary-brand nav-link' }
@@ -35,6 +36,15 @@ export function Navigation() {
         <AnimatedLink href='/#contact' variants={linkVariants}>
           Contact
         </AnimatedLink>
+        <button className=''>
+          <a
+            className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-95 hover:scale-95 active:scale-90 transition cursor-pointer borderBlack text-xs dark:bg-green-500/80'
+            href='/LarryLy-CV.pdf'
+            download
+          >
+            Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
+          </a>
+        </button>
 
         <motion.div variants={linkVariants}>
           <ThemeToggleButton />
