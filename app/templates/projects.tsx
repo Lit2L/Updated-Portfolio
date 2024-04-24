@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion'
 import { VscArrowRight } from 'react-icons/vsc'
 
-import { AnimatedText } from '@components/animated-text'
-import { MotionLinkButton } from '@components/link-button'
-import { ProjectItem } from '@components/project-item'
-import { SectionHeader } from '@components/section-header'
-import { SectionShell } from '@components/section-shell'
+import { AnimatedText } from '@/components/animated-text'
+import { MotionLinkButton } from '@/components/link-button'
+import { ProjectItem } from '@/components/project-item'
+import { SectionHeader } from '@/components/section-header'
+import { SectionShell } from '@/components/section-shell'
 
 import { projects } from '../../projects'
 
@@ -29,7 +29,7 @@ export const Projects = () => {
         <AnimatedText
           as='p'
           className='col-span-full text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8'
-          text='Side projects for learning and challenges.'
+          text='A deeper dive into my work is in the works and coming soon.'
         />
 
         {/* <MotionLinkButton */}

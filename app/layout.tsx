@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { Space_Grotesk } from 'next/font/google'
 import clsx from 'clsx'
-import { Footer } from '@components/footer'
-import { MobileNav } from '@components/mobile-navigation'
-import { Navigation } from '@components/navigation'
+import { Footer } from '@/components/footer'
+import { MobileNav } from '@/components/mobile-navigation'
+import { Navigation } from '@/components/navigation'
 import './globals.css'
-import { Providers } from '@providers'
+import { Providers } from '@/providers'
 
-const epilogue = Space_Grotesk({ subsets: ['latin'] })
+const epilogue = Space_Grotesk({ subsets: ['latin'], weight: 'variable' })
 
 export const metadata: Metadata = {
-  title: 'Larry Ly - Data Analyst and Frontend developer',
-  description: `I bring data driven insights to modern Web development .`,
+  title: 'Larry Ly - Frontend developer',
+  description: `I bring Modern Web development to Data Analytics .`,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

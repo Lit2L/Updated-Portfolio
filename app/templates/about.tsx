@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { IoLogoFigma } from 'react-icons/io5'
 import {
+  SiMysql,
   SiNeovim,
   SiNextdotjs,
   SiPrisma,
@@ -10,15 +11,22 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
+import { IoLogoFirebase } from 'react-icons/io5'
+import { FcCommandLine } from 'react-icons/fc'
+import { SiTrpc } from 'react-icons/si'
 
-import { AnimatedText } from '@components/animated-text'
-import { SectionHeader } from '@components/section-header'
-import { SectionShell } from '@components/section-shell'
-import { getAge } from '@utils/get-age'
+import Figma from '../../public/brands/figma.png'
+import Git from '../../public/brands/git.png'
+import Python from '../../public/brands/python.png'
+import { AnimatedText } from '@/components/animated-text'
+import { SectionHeader } from '@/components/section-header'
+import { SectionShell } from '@/components/section-shell'
+import { getAge } from '@/utils/get-age'
 import Image from 'next/image'
-import { useMounted } from '@hooks/use-mounted'
-import { useTheme } from '@hooks/use-theme'
-import { cn } from '@utils/cn'
+import { useMounted } from '@/hooks/use-mounted'
+import { useTheme } from '@/hooks/use-theme'
+import { cn } from '@/utils/cn'
+
 const MotionImage = motion(Image)
 
 export const About = () => {
@@ -43,7 +51,7 @@ export const About = () => {
         <AnimatedText
           as='p'
           className='col-span-full text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8'
-          text='Get a brief look at who I am and what I do. If you would like to know more about me and my interests, you can.'
+          text='Thanks for visiting.'
         />
         {/* <MotionLinkButton */}
         {/*   href='/about' */}
@@ -73,28 +81,28 @@ export const About = () => {
             <AnimatedText
               as='h3'
               text='Who am I'
-              className='text-sm uppercase tracking-wider text-dark-200 dark:text-dark-400'
+              className='text-sm uppercase tracking-wider text-dark-600 dark:text-dark-400'
             />
             <AnimatedText
               as='p'
-              text={`I'm Larry, I live in Southern California, and I'm a self-taught designer and developer.`}
+              text={`I'm Larry, a self-taught developer who transitioned from a data analyst. It's always been my dream to be in this space as it has no limitations and creates challenges that I really enjoy.  `}
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
               as='p'
-              text='I&ve worked Digital design has been my main focus for many years, specifically UI/UX, but I have the past years shifted my focus to frontend development, which I have developed a great passion for.'
+              text="I don't take anything for granted and I'm looking forward to the future projects and challenges that come my way as I learn and grow in this space."
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
               as='p'
-              text='I enjoy the constant change in the technologies used in the area and love diving into new frameworks and technologies.'
+              text=''
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
-            <AnimatedText
+            {/* <AnimatedText
               as='p'
               text='Spending time customizing, improving and tinkering with my work environment and tools is something I enjoy a lot, as it is something I use for many hours daily. It allows me to have it exactly as I desire. For instance, I use Neovim as my editor of choice, I have built multiple custom mechanical keyboards, and I use Colemak DHk as my keyboard layout.'
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
-            />
+            /> */}
           </motion.article>
 
           <motion.section
@@ -121,15 +129,72 @@ export const About = () => {
                   transition: { duration: 0.5, ease: 'circOut' },
                 },
               }}
-              className='mt-6 flex flex-wrap gap-6 text-dark-300'
+              className='mt-6 flex flex-wrap gap-6 text-dark-200 text-sm'
             >
-              <IoLogoFigma size={28} title='Figma' />
-              <SiNeovim size={28} title='Neovim' />
-              <SiTypescript size={28} title='TypeScript' />
-              <SiReact size={28} title='React.js' />
-              <SiNextdotjs size={28} title='Next.js' />
-              <SiTailwindcss size={28} title='TailwindCSS' />
-              <SiPrisma size={28} title='Prisma' />
+              <div className='bg-gradient-to-tr w-28 from-[#00273f]  to-[#3188c6] p-2 rounded-md'>
+                <SiTypescript size={28} title='TypeScript' />
+                <span className=''>Typescript</span>
+              </div>
+              <div className='bg-[#00d8ff] w-28 p-2 rounded-md'>
+                <SiReact size={28} title='React.js' className='text-white' />
+                <span className=''>ReactJs</span>
+              </div>
+              <div className='bg-[#3572a5] w-28 p-2 rounded-md'>
+                <Image
+                  src={Python}
+                  alt='python icon'
+                  height={28}
+                  width={28}
+                  className='text-white'
+                />
+                <span className=''>Python</span>
+              </div>
+              <div className='bg-gradient-to-bl from-[#f2f2f2] via-[#0a0a0a] to-[#000000] w-28 p-2 rounded-md'>
+                <SiNextdotjs size={28} title='Next.js' className='text-white' />
+                <span className=''>NextJs</span>
+              </div>
+
+              <div className='bg-[#000000] w-28 p-2 rounded-md'>
+                <FcCommandLine size={28} title='CLI' className='text-white' />
+                <span className=''>Command Line Interface</span>
+              </div>
+
+              <div className='bg-[#f34f29] w-28 p-2 rounded-md'>
+                <Image src={Git} alt='git icon' height={28} width={28} className='text-white' />
+                <span className=''>Git</span>
+              </div>
+              <div className='bg-gradient-to-bl from-[#38bdf8]  to-[#1e40af] w-28 p-2 rounded-md'>
+                <SiTailwindcss size={28} title='TailwindCSS' className='text-[#38bdf8]' />
+                <span className=''>Tailwindcss</span>
+              </div>
+              <div className='bg-[#172B4D] w-28 p-2 rounded-md'>
+                <SiMysql size={36} />
+                <span className=''>SQL</span>
+              </div>
+              <div className='bg-[#398CCB] w-28 p-2 rounded-md'>
+                <SiTrpc size={28} title='trpc' className='text-[#f2f2f2]' />
+                <span className=''>trpc</span>
+              </div>
+
+              <div className='bg-[#1e40af] w-28 p-2 rounded-md'>
+                <SiPrisma size={28} title='Prisma' className='text-[#99efe8]' />
+                <span className=''>Prisma</span>
+              </div>
+              <div className='bg-[#4B8BBE] w-28 p-2 rounded-md'>
+                <IoLogoFirebase size={28} title='Firebase' className='text-[#FFCB2B]' />
+                <span className=''>Firebase</span>
+              </div>
+
+              <div className='bg-[#2C2C2C] w-28 p-2 rounded-md'>
+                <Image
+                  src={Figma}
+                  alt='figma icon'
+                  height={28}
+                  width={28}
+                  className='text-[#99efe8]'
+                />
+                <span className=''>Figma</span>
+              </div>
             </motion.div>
           </motion.section>
         </section>
@@ -156,7 +221,7 @@ export const About = () => {
           className={cn(
             'mb-6 w-2/3 self-start md:col-span-full md:col-start-7 md:mb-0 md:w-full xl:col-start-9 relative aspect-square',
             {
-              'bg-dark-100': theme === 'light',
+              'bg-dark-150': theme === 'light',
               'bg-dark-700': theme === 'dark',
             }
           )}
@@ -171,7 +236,7 @@ export const About = () => {
             }}
             fill
             quality={95}
-            src='/assets/larryProfile.webp'
+            src='/assets/LarryProfileNobg.webp'
             alt='Portrait of Larry Ly'
             loading='lazy'
           />

@@ -1,6 +1,6 @@
 'use client'
 
-import { AnimatedLetters, AnimatedText } from '@components/animated-text'
+import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ReactNode } from 'react'
 
@@ -40,7 +40,7 @@ export function SideProjectsShell({ children }: { children: ReactNode }) {
             key='text'
             as='p'
             className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:w-3/5'
-            text='This is where I keep my side projects. You will find stuff like web and mobile apps, automation projects and Neovim plugins.'
+            text='Deeper Dives into my side projects are in the works and coming soon.'
           />
         </AnimatePresence>
       </motion.article>

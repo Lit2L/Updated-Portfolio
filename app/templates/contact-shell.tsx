@@ -4,8 +4,8 @@ import type { ReactNode } from 'react'
 
 import { motion } from 'framer-motion'
 
-import { SectionHeader } from '@components/section-header'
-import { SectionShell } from '@components/section-shell'
+import { SectionHeader } from '@/components/section-header'
+import { SectionShell } from '@/components/section-shell'
 
 type ContactShellProps = {
   children: ReactNode
@@ -35,10 +35,10 @@ export const ContactShell = ({ children }: ContactShellProps) => (
         >
           Do not hesitate to contact me through the form here or by direct email on{' '}
           <a
-            href='mailto:hey@larrylit2l.com'
+            href='mailto:larryly1@gmail.com'
             className='underline decoration-dark-200 underline-offset-[6px] hover:decoration-dark-300 dark:decoration-dark-500 dark:hover:decoration-dark-400'
           >
-            hey@postme.com
+            larryly1@gmail.com
           </a>{' '}
           regardless of the subject.
         </motion.p>

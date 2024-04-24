@@ -7,9 +7,9 @@ import { useScrollspy } from 'use-scrollspy'
 
 import { useEffect, useRef, useState } from 'react'
 
-import Logo from '@components/logo'
-import { ThemeToggleButton } from '@components/theme-toggle-button'
-import { useClickAway } from '@hooks/use-click-away'
+import Logo from '@/components/logo'
+import { ThemeToggleButton } from '@/components/theme-toggle-button'
+import { useClickAway } from '@/hooks/use-click-away'
 import { usePathname } from 'next/navigation'
 
 const navVariants: Variants = {

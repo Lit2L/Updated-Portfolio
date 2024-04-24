@@ -1,5 +1,5 @@
-import { useMounted } from '@hooks/use-mounted'
-import { useTheme } from '@hooks/use-theme'
+import { useMounted } from '@/hooks/use-mounted'
+import { useTheme } from '@/hooks/use-theme'
 import type { Variants } from 'framer-motion'
 import { motion } from 'framer-motion'
 
@@ -47,6 +47,10 @@ const imageMap = {
       webp: '/assets/hero-big-widget-dark.webp',
       png: '/assets/hero-big-widget-dark.png',
     },
+    bigWidgetProfile: {
+      webp: '/assets/hero-big-widget-dark-profile.webp',
+      png: '/assets/hero-big-widget-dark-profile.png',
+    },
   },
   light: {
     base: {
@@ -64,6 +68,10 @@ const imageMap = {
     bigWidget: {
       webp: '/assets/hero-big-widget-light.webp',
       png: '/assets/hero-big-widget-light.png',
+    },
+    bigWidgetProfile: {
+      webp: '/assets/hero-big-widget-light-profile.webp',
+      png: '/assets/hero-big-widget-light-profile.png',
     },
   },
 }
@@ -104,8 +112,8 @@ export const HeroIllustration = () => {
         />
       </picture>
       <picture>
-        <source type='image/webp' srcSet={image.notification.webp} />
-        <source type='image/png' srcSet={image.notification.png} />
+        <source type='image/webp' srcSet={image.bigWidgetProfile.webp} />
+        <source type='image/png' srcSet={image.bigWidgetProfile.png} />
         <MotionImage
           variants={smallWidgetVariants}
           initial='hidden'
@@ -148,12 +156,13 @@ export const HeroIllustration = () => {
           height={186}
           width={205}
           alt='Hero big widget'
-          className='absolute left-[5rem] top-[19rem]'
+          className='absolute left-[5rem] top-[19rem] border-4'
         />
       </picture>
+      {/* Top Right */}
       <picture>
-        <source type='image/webp' srcSet={image.bigWidget.webp} />
-        <source type='image/png' srcSet={image.bigWidget.png} />
+        <source type='image/webp' srcSet={image.bigWidgetProfile.webp} />
+        <source type='image/png' srcSet={image.bigWidgetProfile.png} />
         <MotionImage
           variants={bigWidgetVariants}
           initial='hidden'
@@ -167,7 +176,7 @@ export const HeroIllustration = () => {
             repeatType: 'reverse',
             repeatDelay: 8,
           }}
-          src={image.bigWidget.png}
+          src={image.bigWidgetProfile.png}
           loading='lazy'
           height={186}
           width={205}
@@ -175,6 +184,7 @@ export const HeroIllustration = () => {
           className='absolute right-[8rem] top-[8.25rem]'
         />
       </picture>
+      {/* Bottom Right */}
       <picture>
         <source type='image/webp' srcSet={image.heart.webp} />
         <source type='image/png' srcSet={image.heart.png} />

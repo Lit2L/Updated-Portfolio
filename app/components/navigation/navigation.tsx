@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import Logo from '@components/logo'
-import { linkVariants, navVariants } from '@components/navigation'
-import { ThemeToggleButton } from '@components/theme-toggle-button'
+import Logo from '@/components/logo'
+import { linkVariants, navVariants } from '@/components/navigation'
+import { ThemeToggleButton } from '@/components/theme-toggle-button'
 
 const AnimatedLink = motion(Link)
 AnimatedLink.defaultProps = { className: 'hover:text-primary-brand nav-link' }
@@ -18,7 +18,7 @@ export function Navigation() {
       animate='visible'
       className='container fixed inset-x-0 top-0 z-50 hidden h-32 w-full items-center justify-between md:flex'
     >
-      <AnimatedLink href='/#' variants={linkVariants} className=''>
+      <AnimatedLink href='/' variants={linkVariants} className=''>
         <Logo />
       </AnimatedLink>
 

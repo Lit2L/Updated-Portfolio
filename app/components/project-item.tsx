@@ -6,13 +6,13 @@ import type { MotionProps } from 'framer-motion'
 import { motion } from 'framer-motion'
 import useMedia from 'react-use/lib/useMedia'
 
-import { AnimatedText } from '@components/animated-text'
+import { AnimatedText } from '@/components/animated-text'
 
 import type { Project } from '../../projects'
 import Link from 'next/link'
-import { cn } from '@utils/cn'
-import { useTheme } from '@hooks/use-theme'
-import { useMounted } from '@hooks/use-mounted'
+import { cn } from '@/utils/cn'
+import { useTheme } from '@/hooks/use-theme'
+import { useMounted } from '@/hooks/use-mounted'
 
 type ProjectItemProps = ComponentPropsWithoutRef<'a'> & {
   project: Project
@@ -61,8 +61,8 @@ export const ProjectItem = memo(({ project, ...props }: ProjectItemProps) => {
               },
             },
           }}
-          whileHover={{ scale: 1.05, transition: { duration: 0.5, ease: 'circOut' } }}
-          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: 0.95, transition: { duration: 0.5, ease: 'circOut' } }}
+          whileTap={{ scale: 0.9 }}
           className={cn({
             'bg-dark-100': theme === 'light',
             'bg-dark-700': theme === 'dark',

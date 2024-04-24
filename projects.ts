@@ -16,7 +16,7 @@ export const projects: Project[] = [
     image:
       'https://cdn.dribbble.com/userupload/12840703/file/original-d9f6767c563b14bca73ca6105eff8b89.png?resize=1024x666',
     imageAlt: 'Ecommerce site selling aromatic experiences. App by Lit2l',
-    link: '/project/tsks',
+    link: 'https://louvair.com',
     color: '#1D1D26',
   },
   {
@@ -26,11 +26,12 @@ export const projects: Project[] = [
     image:
       'https://cdn.dribbble.com/userupload/12178406/file/original-5e332247bb89258ea8e13dd1d5fadb23.png?resize=752x',
     imageAlt: 'HippoDocs by Lit2l',
-    link: '/project/miinto',
+    link: 'https://admin-hippo.vercel.app/',
+    color: '#F9F9F9',
   },
   {
     id: 2,
-    name: 'IyamSwimCoach App',
+    name: 'IyamSwimCoach',
     area: 'Payments, Class Management, Booking & Scheduling',
     image:
       'https://cdn.dribbble.com/userupload/12841225/file/original-da64cc0cd6b9cdbed957b3d7efdf4046.png?resize=1024x666',

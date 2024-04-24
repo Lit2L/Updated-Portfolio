@@ -5,7 +5,7 @@ import { forwardRef } from 'react'
 
 import { HTMLMotionProps, motion } from 'framer-motion'
 import { VscArrowRight } from 'react-icons/vsc'
-import { cn } from '@utils/cn'
+import { cn } from '@/utils/cn'
 
 export type LabelProps = HTMLMotionProps<'label'> & {
   required?: boolean
@@ -49,7 +49,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
           visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
         }}
         className={cn(
-          'focus-within:border-primary-brand mt-2 w-full appearance-none rounded-none border-b-[1px] border-dark-200 bg-transparent py-4 px-3 text-2xl font-light text-dark-400 outline-none placeholder:text-dark-200 dark:border-dark-600 dark:text-dark-200 dark:placeholder:text-dark-500',
+          'focus-within:border-primary-brand mt-2 w-full appearance-none rounded-none border-b-[1px] border-dark-200 bg-transparent py-4 px-3 text-2xl font-light text-dark-400 outline-none placeholder:text-dark-200 dark:border-dark-400 dark:text-dark-200 dark:placeholder:text-dark-500',
           className
         )}
       />

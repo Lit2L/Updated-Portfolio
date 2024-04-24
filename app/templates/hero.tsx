@@ -2,9 +2,9 @@
 
 import { AnimatePresence, motion } from 'framer-motion'
 
-import { AnimatedLetters, AnimatedText } from '@components/animated-text'
-import { HeroIllustration } from '@components/hero-illustration'
-import { MotionLinkButton } from '@components/link-button'
+import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
+import { HeroIllustration } from '@/components/hero-illustration'
+import { MotionLinkButton } from '@/components/link-button'
 
 export const Hero = () => {
   return (
@@ -27,8 +27,8 @@ export const Hero = () => {
           <article className='lg:max-w-[60%]'>
             <AnimatedLetters
               as='h1'
-              text='Web Developer & Data Analyst'
-              className='text-5xl font-medium md:text-6xl lg:text-7xl'
+              text='Larry Ly'
+              className='text-5xl font-medium md:text-6xl lg:text-7xl text-dark-600 dark:text-dark-150 text-center'
               textVariants={{
                 hidden: { transition: { staggerChildren: 0.015 } },
                 visible: { transition: { staggerChildren: 0.015 } },
@@ -42,10 +42,13 @@ export const Hero = () => {
                 },
               }}
             />
+            <span className='block mt-4 text-2xl font-light text-center text-dark-200 dark:text-dark-300'>
+              Frontend Developer & Problem Solver
+            </span>
             <AnimatedText
               as='p'
-              className='mt-10 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
-              text='I bring data-driven insights to modern Web development.'
+              className='mt-10 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 text-center'
+              text='Making things on the web is what I love and solving problems is how I grow.'
             />
           </article>
         </AnimatePresence>

@@ -13,15 +13,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${URL}/project/tsks`,
+      url: `${URL}/project/louvair`,
       lastModified: new Date(),
     },
     {
-      url: `${URL}/project/miinto`,
+      url: `${URL}/project/hippodocs`,
       lastModified: new Date(),
     },
     {
-      url: `${URL}/project/100-days-of-ui`,
+      url: `${URL}/project/iyamswimcoach`,
       lastModified: new Date(),
     },
   ]
