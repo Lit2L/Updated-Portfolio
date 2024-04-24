@@ -43,9 +43,9 @@ const imageMap = {
       webp: '/assets/hero-heart-widget-dark.webp',
       png: '/assets/hero-heart-widget-dark.png',
     },
-    bigWidget: {
-      webp: '/assets/hero-big-widget-dark.webp',
-      png: '/assets/hero-big-widget-dark.png',
+    projectWidget: {
+      webp: '/assets/hero-project-dark.webp',
+      png: '/assets/hero-project-dark.png',
     },
     bigWidgetProfile: {
       webp: '/assets/hero-big-widget-dark-profile.webp',
@@ -58,16 +58,16 @@ const imageMap = {
       png: '/assets/hero-base-light.png',
     },
     notification: {
-      webp: '/assets/hero-notif-widget-light.webp',
-      png: '/assets/hero-notif-widget-light.png',
+      webp: '/assets/LarryCV.webp',
+      png: '/assets/LarryCV.png',
     },
     heart: {
       webp: '/assets/hero-heart-widget-light.webp',
       png: '/assets/hero-heart-widget-light.png',
     },
-    bigWidget: {
-      webp: '/assets/hero-big-widget-light.webp',
-      png: '/assets/hero-big-widget-light.png',
+    projectWidget: {
+      webp: '/assets/hero-project-light.webp',
+      png: '/assets/hero-project-light.png',
     },
     bigWidgetProfile: {
       webp: '/assets/hero-big-widget-light-profile.webp',
@@ -111,6 +111,7 @@ export const HeroIllustration = () => {
           className='object-cover w-full min-w-[693px] h-full min-h-[706px]'
         />
       </picture>
+      {/* Top Left */}
       <picture>
         <source type='image/webp' srcSet={image.bigWidgetProfile.webp} />
         <source type='image/png' srcSet={image.bigWidgetProfile.png} />
@@ -135,9 +136,10 @@ export const HeroIllustration = () => {
           className='absolute right-96 top-24'
         />
       </picture>
+      {/* Bottom Left */}
       <picture>
-        <source type='image/webp' srcSet={image.bigWidget.webp} />
-        <source type='image/png' srcSet={image.bigWidget.png} />
+        <source type='image/webp' srcSet={image.projectWidget.webp} />
+        <source type='image/png' srcSet={image.projectWidget.png} />
         <MotionImage
           variants={bigWidgetVariants}
           initial='hidden'
@@ -151,18 +153,18 @@ export const HeroIllustration = () => {
             repeatType: 'reverse',
             repeatDelay: 8,
           }}
-          src={image.bigWidget.png}
+          src={image.projectWidget.png}
           loading='lazy'
           height={186}
           width={205}
           alt='Hero big widget'
-          className='absolute left-[5rem] top-[19rem] border-4'
+          className='absolute left-[5rem] top-[19rem]'
         />
       </picture>
       {/* Top Right */}
       <picture>
-        <source type='image/webp' srcSet={image.bigWidgetProfile.webp} />
-        <source type='image/png' srcSet={image.bigWidgetProfile.png} />
+        <source type='image/webp' srcSet={image.notification.webp} />
+        <source type='image/png' srcSet={image.notification.png} />
         <MotionImage
           variants={bigWidgetVariants}
           initial='hidden'

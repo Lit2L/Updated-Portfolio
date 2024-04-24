@@ -137,7 +137,7 @@ export const About = () => {
               </div>
               <div className='bg-[#00d8ff] w-28 p-2 rounded-md'>
                 <SiReact size={28} title='React.js' className='text-white' />
-                <span className=''>ReactJs</span>
+                <span className='text-dark-400'>ReactJs</span>
               </div>
               <div className='bg-[#3572a5] w-28 p-2 rounded-md'>
                 <Image
