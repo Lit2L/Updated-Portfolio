@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' className='scroll-p-32 scroll-smooth' suppressHydrationWarning>
       <body
         className={clsx(
-          'bg-dark-50 body text-dark-600 transition-colors duration-300 ease-in-out dark:bg-dark-850 dark:text-dark-50',
+          'bg-dark-150 body text-dark-600 transition-colors duration-300 ease-in-out dark:bg-dark-850 dark:text-dark-50',
           epilogue.className
         )}
       >
