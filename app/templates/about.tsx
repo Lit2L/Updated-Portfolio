@@ -85,12 +85,12 @@ export const About = () => {
             />
             <AnimatedText
               as='p'
-              text={`I'm Larry, a self-taught developer who transitioned as a data analyst. It's always been my dream to be in this space as it does not have any limitations and creates challenges that I love solving.`}
+              text={`I'm Larry, a self-taught developer with a background as a data analyst.  I started developing web apps as a way to learn something new and to explore a different side of the industry only to find out that I really enjoy developing. Now I spend my days trying to build cool things and expand my knowledge.  `}
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
               as='p'
-              text="I don't take anything for granted and I look forward to applying my combined my skills as a developer and my background as a data analyst to any future projects and challenges that come my way as I continue to learn and grow."
+              text="I don't take anything for granted and I look forward to applying my combined skills as a developer and data analyst to any future projects."
               className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200'
             />
             <AnimatedText
